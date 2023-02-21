@@ -78,10 +78,10 @@ body {
   font-size: var(--fs-normal);
   font-family: var(--ff-normal);
   background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
-  margin-top: 15em;
+}
 
-  /* display: grid;
-  place-content: safe center; */
+main {
+  padding-top: 12em;
 }
 
 
@@ -91,7 +91,6 @@ body {
   border-radius: 2em;
   max-width: 436px;
   margin: 0 auto;
-  margin-top: 8em;
   padding: 2em;
   display: grid;
   gap: 4em
