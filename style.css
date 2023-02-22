@@ -91,7 +91,7 @@ main {
   border-radius: 2em;
   max-width: 436px;
   margin: 0 auto;
-  padding: 2em;
+  padding: 4em;
   display: grid;
   gap: 4em
 }
@@ -111,6 +111,7 @@ picture::after {
   background-size: contain;
   transform: translateY(-120px);
 }
+
 
 h1 {
   font-size: var(--fs-900);
@@ -182,22 +183,14 @@ li.active .answer {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     overflow: hidden;
+    gap: 1em;
   }
 
   picture {
     margin-top: unset;
     position: relative;
     transform: translateX(-90px);
-  }
-
-  picture::after {
-    position: absolute;
-    content: '';
     width: 100%;
-    height: 100%;
-    background: url('images/bg-pattern-mobile.svg') no-repeat;
-    background-size: contain;
-    transform: translateY(-120px);
   }
 
   h1 {
