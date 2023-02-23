@@ -3,10 +3,14 @@ console.log(faqs);
 
 faqs.forEach((faq) => {
   faq.addEventListener('click', () => {
-    faqs.forEach((faq) => {
+    if (faq.classList.contains('active')) {
       faq.classList.remove('active')
-    })
-    faq.classList.add('active')
+    } else {
+      faqs.forEach((faq) => {
+        faq.classList.remove('active')
+      })
+      faq.classList.add('active')
+    }
   })
 })
 
